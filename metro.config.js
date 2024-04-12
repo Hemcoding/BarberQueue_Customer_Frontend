@@ -9,3 +9,9 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
 const config = {};
 
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+
+// module.exports = (async () => {
+//   const defaultConfig = await getDefaultConfig();
+//   defaultConfig.resolver.assetExts.push('env');
+//   return defaultConfig;
+// })();
